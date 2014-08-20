@@ -1,0 +1,410 @@
+-> Passar o arquivo pdf para os alunos
+
+-> Baixar o bootstrap: getbootstrap.com
+-> Descompactar e renomear a pasta para first-site
+-> Copiar a pasta para uma pasta diferente
+-> Abrir a pasta no sublime
+
+-> Na página do bootstrap, copiar o example base
+-> Colocar o conteúdo em um arquivo index.html e salvar
+-> Falar um pouco sobre o código (mostrar a página sem o bootstrap)
+
+-> Mostrar a página que vai ser desenvolvida
+-> Mostrar alguns templates
+-> Selecionar o template jumbotron
+-> Copiar o conteúdo da página
+-> Colar no arquivo index.html
+-> Falar um pouco sobre o código html da página
+-> Corrigir o caminho do bootstrap.min.css 
+-> Apagar os demais css
+-> Voltar ao template do bootstrap e acessar o arquivo jumbotron.css
+-> Criar o arquivo jumbotron.css, copiar o código para este arquivo
+-> Mudar o caminho do arquivo jumbotron.css
+
+-> Acessar o starter template e copiar o código da barra de navegação
+-> Substituir a barra de navegação atual pela copiada
+
+-> Acessar a seção de componentes do bootstrap.
+-> Acessar a opção navbar no menu direito
+-> Acessar a opção component alignment
+-> Copiar a classe navbar-right
+-> Identificar o elemento através do inspecionar elemento (tag ul)
+-> Inserir a classe na página
+-> Mudar o texto Project name para One Million Lines
+-> Mudar os outros texto para WHO WE ARE e GET INVOLVED  e remover o outro
+-> Falar um pouco sobre o código da barra de navegação
+-> Remover a classe active do WHO WE ARE
+
+-> DIVs
+-> Colocar uma borda de 1px solid na div com classe jumbotron
+-> Colocar uma borda de 1px solid na div da seção heading
+-> Colocar uma borda de 1px solid na div container dentro da classe jumbotron 
+-> falar que a classe container possui 1170px
+-> Colocar uma borda de 1px solid white na div container da classe navbar
+-> Colocar uma borda de 1px solid na div container das seções Heading...
+-> Digitar 'conteúdo fora do container' direto na classe jumbotron fora do container
+
+-> Substituir o conteudo da das tags h1 e p pelo das páginas 10 e 11 do arquivo pdf
+-> Usar o inspecionar elemento para alinhar o código de h1 (text-align: center)
+-> Remover o css da tag h1 e colocar na classe jumbotron (inserir no arquivo jumbotron: 
+.jumbotron{
+	text-align: center
+}
+
+-> Acessar a aba CSS da página do bootstrap
+-> Acessar a sessão buttons
+-> Inserir a classe btn-danger no botão Learn more
+
+-> UM POUCO DE CSS
+-> Uma das maneiras de usar o css é através de links para arquivos externos (css externo)
+-> Outra maneira é usar a tag style no head: (css interno)
+<style>
+  .jumbotron{
+	text-align: center
+  }
+</style>
+-> Uma terceira maneira é usar css inline
+<div class="jumbotron" style="text-align: center">
+
+-> Voltar o estilo para o arquivo css
+
+-> Criar uma classe btn-lg com o tamanho de fonte 24
+ .btn-lg{
+ 	font-size: 24px;
+ }
+ 
+-> Mostrar no inspecionar elemento que o css do bootstrap foi sobrescrito
+
+-> Criar a classe btn-lg em uma tag style (depois dos links dos arquivos) com a fonte 36
+<style type="text/css">
+   .btn-lg{
+	 font-size: 36px;
+   }
+</style>
+
+-> Mover o link do arquivo jumbotron.css para depois da tag style
+-> Voltar o link
+
+-> Remover a tag style e mudar a classe btn-lg do arquivo jumbotron.css para 36px
+
+-> Mudar a cor da classe jumbotron para vermelho:
+.jumbotron{
+  text-align: center;
+  color: red;
+ }
+ 
+ -> Mudar a cor apenas do parágrafo para azul
+ .jumbotron p{
+    color: blue;
+ }
+ 
+ ** Neste caso não vai ser a ordem que vai prevalecer, e sim o mais específico
+ 
+-> Mostrar que o css inline é o mais específico:
+<p style="color: green">All over the country people are taking the <strong>HOUR OF CODE</strong> 
+
+-> Mudar a fonte do h1
+
+-> Procurar no google por google fonts
+-> Pesquisar por Arvo
+-> Clicar em Add to Collection
+-> Clicar em Use
+-> Selecionar a opção normal
+-> Copiar o link <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>(passo 3)
+-> Colar abaixo da tag title
+-> Voltar no google e copiar o passo 4 (font-family: 'Arvo', serif;)
+-> Colocar no arquivo jumbotron:
+.jumbotron h1{
+	font-family: 'Arvo', courier, serif; /*courier foi adicionado*/
+}
+
+-> Adicionar esta fonte ao cabeçalho:
+ul.nav{
+	font-family: 'Arvo', courier, serif;
+}
+
+-> Como usar um mesmo css em mais de um lugar (separando por vírgula)
+ul.nav, .jumbotron h1{
+	font-family: 'Arvo', courier, serif; /*courier foi adicionado*/
+}
+
+-> Mudar os menus do cabeçalho para a fonte 13:
+ul.nav {
+	font-size: 13px;
+}
+
+-> Falar do Box Model:
+-> Usando o inspecionar elemento, definir o seguinte css para o elemento h1:
+- padding: 10px;
+- border: 5px solid;
+- margin: 10px;
+- background-color: grey
+
+-> Aumentar e diminuir a valor de padding;
+
+-> Recarregar a página.
+-> Definir o margin-top como 0px:
+.jumbotron h1{
+	margin-top: 0px;
+}
+
+-> Usar apenas margin, ou apenas padding irá definir o css para os 4 lados
+-> Ao usar dois valores, o primeiro vai indicar top e bottom e o segundo right e left:
+- padding 20px 10px;
+-> Ao usar 4 valorres: top, right, bottom e left:
+- padding 20px 10px 30px 40px;
+- margin 20px 10px 30px 40px;
+
+-> Definir margin-top: 50 para h1 e 30 para p
+.jumbotron h1{
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.jumbotron p{
+	margin-bottom: 30px;
+}
+
+Aula 15
+
+-> Criar uma nova pasta chamada imagens
+-> Colocar nesta pasta o arquivo code.png
+-> Inserir a imagem abaixo do paragrafo learn more
+<img src="imagens/code.png">
+-> Inserir os atributos title e alt
+<img src="imagens/code.png" title="Code.org logo" alt="Code.org"> 
+-> Mostrar um pouco mais sobre img no w3schools
+-> Copiar a imagem hero-image para a pasta imagens
+-> Inserir background-image na classe jumbotron:
+background-image: url("../imagens/hero-image.jpg");
+-> Definir a cor da classe jumbotron como branca:
+color: white;
+-> Mostra o uso de font-weight:
+-> Definir o padding do p como 0 50
+.jumbotron p{
+	margin-bottom: 30px;
+	padding: 0 50px;
+}
+-> Copiar a imagem top-logo para a pasta imagens
+-> Inserir a imagem no link:
+<a class="navbar-brand" href="#"><img src="imagens/top-logo.png"></a>
+- png tem o background transparente enquanto que jpg é sólido
+
+Aula 16
+
+Mostrar o sistema de 12 colunas do bootstrap:
+http://getbootstrap.com/css/#grid
+-> Duas regras importantes:
+- As linhas devem ficar dentro de uma div com a classe container
+
+-> Mostrar o uso do layout de 12 colunas na sessão heading
+-> Mudar os valores para 6, 4 e 2
+-> Mudar os valores para 6, 4 e 3
+
+
+Aula 17
+
+-> Na sessão de headings, mudar os títulos, o texto e os botões (p. 20 do pdf)
+-> Fala sobre a tag a
+-> Links relativos:
+-> Criar a página link.html (colocar um hello world)
+-> No link start learning colocar um link para esta página:
+ <p><a class="btn btn-default" href="link.html" role="button">Start Learning &raquo;</a></p>
+ 
+Links absolutos:
+-> colocar um link para o site da season:
+<p><a class="btn btn-default" href="http://www.season.com.br" role="button">Join The Iniative &raquo;</a></p>
+-> Abrir a página em uma nova aba:
+target="_blank"
+
+Aula 19
+-> Pesquisar no google por font awesom
+-> Fazer o download
+-> Extrair
+-> Renomear para font-awesome
+-> Colar dentro da pasta fonts do projeto
+-> Apagar os demais conteudos da pasta font (imagens-bootstrap)
+-> Na página do font-awesome, clicar na aba get started
+-> Em EASY: Default CSS copiar o link e colar abaixo do Arvo
+-> Clicar na opção para ver os exemplos (numero e de EASY: Default CSS)
+-> Copiar o exemplo da câmera e colar acima de Students
+<i class="fa fa-camera-retro"></i>
+-> Clicar na aba icons
+-> Pesquisar por user e trocar o exemplo para fa-user
+<i class="fa fa-user"></i>
+-> Voltar para a aba exemplos
+-> Descer até Stacked Icons
+-> Copiar:
+<span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+</span>
+
+e trocar por
+
+<span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+</span>
+
+-> Aumentar o tamanho para 4x:
+<span class="fa-stack fa-4x">
+
+-> Copiar a figura para os outros dois headers
+-> Na aba icons, procurar por pencil e money
+
+Aula 20 - spans
+
+-> Divs ajudam nos estilos css em elementos em bloco
+-> Spans são o correspondente para elementos inline
+-> Mostrar span no site w3schools
+-> No heading Students, envolver o texto 1000 lines em uma tag span com uma class emphasis
+-> Definir a classe emphasis:
+.emphasis {
+	color: red;
+	font-size: 26px;
+} 
+
+Aula 21:
+-> Remover a classe e o span emphasis
+-> Dividir a tela do sublime em duas: (html e css) Alt + Shift + 2 (view -> layout)
+-> Mudar os headings de h2 para h3
+-> Criar uma h2 acima dos headings: no lugar de <!-- Example row of columns -->
+<h2>Get Involved</h2>
+-> Mudar a cor para #e74c3c
+-> No div do heading, criar uma classe homepage (tudo centralizado)
+.homepage{
+	text-align: center;
+}
+
+-> Colocar os estilos na tag h2:
+.homepage h2{
+	color: #e74c3c;
+	font-family: 'Arvo', courier, serif;
+	text-transform: uppercase;
+}
+
+-> Colocar os estilos na tag h3:
+.homepage h3{
+	color: #e74c3c;
+	font-family: 'Arvo', courier, serif;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+-> Mudar para:
+.homepage h2, .homepage h3{
+	color: #e74c3c;
+	font-family: 'Arvo', courier, serif;
+	text-transform: uppercase;
+}
+
+.homepage h2{
+	font-size: 30px;
+}
+
+.homepage h3{
+	font-size: 26px;
+}
+
+-> Mudar a fonte do p para 21:
+.homepage p{
+	font-size: 21px;
+}
+
+-> Mudar a cor dos links:
+.homepage a{
+	color: #e74c3c;
+}
+
+Aula 22
+-> Inserir uma linha abaixo do get involved:
+<hr>
+-> No inspecionar mesmo, definir a cor da borda #e74c3c e a largura da linha 15%
+-> Mostrar o tamamnho da linha oa diminuir a página
+-> Mudar o tamanho para 160px;
+-> Adicionar um margin-top: 15px;
+-> Mostrar o uso do margin: 15px;
+-> Mudar para margin: 15px auto
+-> No final deixar assim:
+.homepage hr{
+	border-top: 1px #e74c3c solid;
+	width: 160px;
+	margin-top: 15px;
+}
+
+Aula 23
+-> Copiar o conteúdo da página 30 e colocar acima da do GET INVOLVED
+-> Copiar a imagem Academy... para a pasta imagem
+-> Inserir a imagem na tela:
+<img src="images/academy_brand_med.png" title="MASSIVE Academy" alt="MASSIVE
+Academy">
+
+Aula 24
+-> Inspecionar o link Massive...
+-> Clicar no canto superior direito do element.style
+-> Falar das pseudo classes e dos seletores em geral (w3schools)
+-> Definir o estilo ao passar o mouse sobre:
+.homepage a:hover{
+	color: blue;
+	text-decoration: none;
+	opacity: 0.3;
+}
+
+
+Aula 25
+-> Na div do get involved, definir um background-color: #f5f5f5
+-> Mostrar o problema do container
+-> Criar uma div envolvendo a div do container com o id #get-involved
+-> definir o css:
+#get-involved{
+	background-color: #f5f5f5;
+}
+-> Margens para a classe homepage:
+.homepage{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+Aula 26
+-> Ids devem ser usados para representar elementos únicos
+-> Classes devem ser usadas para especificar estilos para um grupo de elementos
+-> Ids são mais específicos que classes (prioridade maior)
+-> Criar o id educator na tag h3 de educators
+-> Sobrescrever o css de .homepage h3:
+#educator{
+	font-size: 30px;
+	color: black;
+	text-transform: lowercase;
+}
+
+-> Falar sobre links de id:
+-> Criar um link para a parte do get involved:
+<li><a href="#get-involved">GET INVOLVED</a></li>
+-> Envolver a div do Who We Are em uma div com id who
+-> Criar o link para esta seção
+
+Aula 27
+-> Remover o id educator e o css
+-> Copiar a imagem one million... e colar na pasta imagens
+-> Definir o css:
+footer{
+	background-color: #e74c3c;
+	padding-top: 150px;
+	padding-bottom: 30px;
+}
+-> Remover padding-bottom: 20px; da tag body (no css)
+
+ 
+
+
+
+
+
+
+
+..... continuar na aula 14 ....
+
+-> 
+
