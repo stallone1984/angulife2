@@ -1,4 +1,1 @@
-angulife2
-=========
-
-criação página
+Criar uma classe chamada Funcionario
