@@ -18,8 +18,51 @@ do tipo boolean (atributo de funcionario) e imprimir na tela:
 "O funcionpario é casado/solteiro" usando o operador ternário.
 
 Criar um método que imprima o imposto pago por um funcionário:
-Este método deverá receber um valor double salario e um valor String idade.
+Este método deverá receber um valor double salario e um valor int idade.
 Se a idade for menor que 30, o imposto será 15% do salário. Se a idade estiver entre 30 e 50 anos (inclusive),
 o imposto será 10% do salário e se a idade for maior do que 50 o imposto será 5% do salário.
 A mensagem com o imposto deverá ser exibida da seguinte forma:
 "Salário: xxxx, Idade: xxxx, Imposto calculado: xxxx"
+
+
+Exercício Aula 3 - 02/09/2014
+
+Criar uma classe Paciente
+Criar os atributos nome, idade, altura, peso, sexo
+Criar o método calcularImc ->  (peso / (altura * altura)
+Criar o método verificarImc seguindo as seguintes regras:
+
+Sexo Feminino:
+   Idade <= 30 
+   imc < 20 -> Abaixo do peso
+   imc >= 20 <= 25 -> Peso Normal
+   imc > 25 -> Acima do peso
+   
+   Idade > 30 
+   imc < 18 -> Abaixo do peso
+   imc >= 18 <= 23 -> Peso Normal
+   imc > 23 -> Acima do peso
+   
+Sexo Masculino:
+   Idade <= 35 
+   imc < 22 -> Abaixo do peso
+   imc >= 22 <= 26 -> Peso Normal
+   imc > 26 -> Acima do peso
+   
+   Idade > 35 
+   imc < 20 -> Abaixo do peso
+   imc >= 20 <= 24 -> Peso Normal
+   imc > 24 -> Acima do peso
+   
+-> Executar os seguintes testes:
+
+Pessoa do sexo feminino com 28 anos, altura 1.6 e peso 65 -> Acima do peso
+Pessoa do sexo masculino com 28 anos, altura 1.6 e peso 65 -> Peso normal
+Pessoa do sexo feminino com 35 anos, altura 1.65 e peso 65 -> Acima do peso
+Pessoa do sexo masculino com 40 anos, altura 1.7 e peso 70 -> Acima do peso
+
+-> Criar uma classe chamada Exercicios:
+
+-> Criar um método que imprima a soma dos valores pares a partir de zero enquanto a soma for menor que 60.
+
+-> Criar um método que imprima os valores entre 0 e 100 que sejam múltiplos de 3 e de 5 (ao mesmo tempo).
