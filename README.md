@@ -24,38 +24,6 @@ o imposto será 10% do salário e se a idade for maior do que 50 o imposto será
 A mensagem com o imposto deverá ser exibida da seguinte forma:
 "Salário: xxxx, Idade: xxxx, Imposto calculado: xxxx"
 
-public static void main(String[] args) {
-		Funcionario funcionario = new Funcionario();
-		funcionario.nome = "Heitor";
-		funcionario.idade = 29;
-		funcionario.salario = 1000;
-		funcionario.sexo = 'M';
-		funcionario.casado = false;
-		System.out.println(
-				"O funcionário " + funcionario.nome + 
-				" do sexo " + (funcionario.sexo == 'M' ? "Masculino" : "Feminino") + 
-				" com idade " + funcionario.idade + " anos, " +
-				"possui um salário de R$ " + funcionario.salario + " reais");
-		imprimirCasado(funcionario.casado);
-		calcularImposto(funcionario.salario, funcionario.idade);
-	}
-	
-	public static void imprimirCasado(boolean casado){
-		String resultado = casado ? "Casado" : "Solteiro";
-		System.out.println("O funcionario é " + resultado);
-	}
-	
-	public static void calcularImposto(double salario, int idade){
-		double impostoCalculado = idade < 30 ? salario * 0.15 : 
-			idade < 50 ? salario * 0.1 : salario * 0.05;
-		System.out.println("Salario: " + salario + 
-				" Idade: " + idade + 
-				" Imposto Calculado: " + impostoCalculado);
-	}
-
-
-
-
 
 Exercício Aula 3 - 02/09/2014
 
