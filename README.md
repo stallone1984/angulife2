@@ -98,3 +98,72 @@ Pessoa do sexo masculino com 40 anos, altura 1.7 e peso 70 -> Acima do peso
 -> Criar um método que imprima a soma dos valores pares a partir de zero enquanto a soma for menor que 60.
 
 -> Criar um método que imprima os valores entre 0 e 100 que sejam múltiplos de 3 e de 5 (ao mesmo tempo).
+
+
+-> Exercícios adicionados em 04/09/2014
+
+- Criar uma classe Calculadora
+
+- Criar um método subtrai que recebe dois parâmetros do tipo int, guarda o resultado da diferença entre os dois valores em uma variável local, imprime uma mensagem com a diferença entre os dois valores ("O resultado de A - B é C") e não retorna nenhum valor;
+  
+- Criar um método dividir que recebe dois parâmetros do tipo double e verifica se o valor do 
+  primeiro parâmetro é maior que o segundo. Se o valor do primeiro parâmetro não for maior que o segundo,
+  o método deverá retornar uma String com uma mensagem de erro. Se o primeiro parâmetro for maior,
+  o método deverá realizar a divisão e retornar uma String com uma mensagem com o valor da divisão.
+  ("A divisão de A por B é C")
+  
+- Criar um método somar que recebe uma quantidade indeterminada de valores, soma estes valores e retorna o valor da soma (usar varargs como argumento e usar o foreach para percorrer e somar os valores)
+
+- Criar uma classe TesteCalculadora para testar os métodos
+
+
+***** Execício conta bancária *****
+
+1. Criar uma classe Cliente com os atributos:
+- String nome; 
+- Date dataNascimento;
+- String cpf;
+
+- Encapsular os atributos
+
+2. Criar uma classe Conta com os atributos:
+- String numero;             
+- int mesValidade;           
+- int anoValidade;           
+- double saldo;              
+- double limite;             
+- Cliente cliente;           
+
+- Encapsular os atributos
+
+3. Criar um método depositar() que recebe como parâmetro um valor do tipo double
+- Se o valor for menor ou igual a zero, imprimir uma mensagem de erro
+- Caso contrário imprimir uma mensagem informando que o o depósito foi realizado e mostrar
+o novo saldo na mensagem
+
+4. Criar um método sacar() que recebe como parâmetro um valor do tipo double
+- Se o valor for menor ou igual a zero, imprimir uma mensagem de erro
+- Se o saldo menos o valor a ser sacado for menor que zero, verificar se o saldo menos o valor é menor que o limite, se for, realizar o saque mas exibir uma mensagem de alerta informando que o saque foi realizado mas que o usuário entrou no limite. Exibir o saldo na mensagem. Caso o saldo menos o valor seja maior que o limite, exibir uma mensagem de erro que contenha o nome do cliente da conta ("Olá Sr(a). {nome_do_cliente_da_conta}. Não foi possível....")
+- Se o saldo menos o valor for maior que zero, realizar o saque e exibir uma mensagem de sucesso exibindo o novo saldo
+
+5. Criar um método transferir que recebe como parâmetro a conta destino e o valor a ser transferido
+- Se o valor informado for menor que zero, imprimir uma mensagem de erro
+- Se a conta destino for igual à conta de origem, exibir uma mensagem de erro
+- Utilizar os métodos sacar e depositar para realizar a transferência (saca da conta origeme deposita na conta destino)
+- Fazer algum tipo de verificação em que se não for possível fazer o saque (saldo insuficiente por exemplo) o depósito também não seja feito.
+- No caso de transferência realizada com sucesso, a mensagem deverá conter o nome do cliente e o saldo das contas origem e destino 
+
+6. Criar uma classe TesteConta com um método main
+- Criar um cliente e informar um nome para o mesmo
+- Criar uma conta. Setar o cliente criado como o cliente da conta
+- Informar um saldo e um limite para a conta
+- Testar o método depositar
+- Testar o método sacar em um caso em que o saldo continue positivo, um caso em que o saldo fique negativo mas dentro do limite e um caso em que estoure o limite.
+
+- Criar um novo cliente e setar um nome a ele
+- Criar uma nova conta e setar este cliente a ela
+- Informar um saldo para esta nova conta
+
+- Testar o método transferir usando a nova conta criada como conta destino
+  
+
