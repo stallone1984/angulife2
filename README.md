@@ -133,5 +133,35 @@ o novo saldo na mensagem
 - Informar um saldo para esta nova conta
 
 - Testar o método transferir usando a nova conta criada como conta destino
+
+07/10
+-> EXERCÍCIO COM EXCEPTIONS
+
+-> Criar uma exceção unchecked (estendendo de RuntimeException) chamada ValorInvalidoException.
+-> Criar o construtor que recebe uma mensagem do tipo String e chama o construtor da superclasse passando a mensagem
+
+-> Criar uma exceção checked (estendendo de Exception) chamada SaldoInsuficienteException.
+-> Criar o construtor que recebe uma mensagem do tipo String e chama o construtor da superclasse passando a mensagem
+
+-> No método sacar(), colocar a verificação de número maior que zero dentro de um bloco try
+-> Se o valor não for maior do que zero, lançar uma exceção ValorInvalidoException com a mensagem apropriada.
+-> Criar um bloco catch que capture a exceção do bloco try anterior e inprima a mensagem de erro no console e retorne o valor false;
+
+-> No método sacar(), caso o saldo seja insuficiente para o saque, lançar uma exceção SaldoInsuficienteException com uma mensagem de erro.
+-> Na declaração do método sacar, informar que o método pode lançar uma exceção SaldoInsuficienteException (declaração throws)
+-> Colocar a chamada ao método sacar dentro de um bloco try. 
+-> Criar um bloco catch que capture a exceção lançada no bloco try com a chamada ao método sacar.
+-> Imprimir a pilha de chamadas de métodos no console
+
+-> EXERCÍCIO COM ASSERTIVAS
+
+-> Criar um enum TipoConta com os tipo CONTA_CORRENTE  e CONTA_POUPANCA
+-> Criar a classe conta (vazia mesmo_
+-> Criar as classes ContaCorrente e ContaPoupanca (também vazias), que irão estender de conta
+-> Criar uma classe Banco com um método criarConta() que irá receber como parâmetro um tipo de conta (TipoConta) e retornar uma Conta
+-> O método criarConta irá criar uma conta (Poupanca ou Corrente) de acordo com o tipo passado e retornar essa conta.
+-> Uma assertiva deverá ser usada para garantir que a conta não seja nula e deverá imprimir a mensagem 'A conta não foi criada' caso a conta seja nula
+
+-> Criar a classe TesteBanco que fará uso do método criarConta
   
 
